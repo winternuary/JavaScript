@@ -1,0 +1,22 @@
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#score {
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 10px 0 50px 0;
+}
+
+#pop {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 400px;
+}
