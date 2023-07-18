@@ -10,8 +10,12 @@
 h1 {
   font-size: 60px;
 }
+#where {
+  color: blue;
+}
 
 #weather {
   font-size: 70px;
   font-weight: 700;
+  color: cornflowerblue;
 }
