@@ -9,14 +9,18 @@
   color: black;
   font-size: 50px;
   font-weight: 700;
-  margin: 10px 0 50px 0;
 }
 
+#legend {
+  font-weight: 700;
+  margin: 10px 0 40px 0;
+  font-size: 30px;
+}
 #pop {
   display: flex;
   justify-content: center;
 }
 
 img {
-  width: 400px;
+  width: 380px;
 }
