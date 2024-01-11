@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div class="alert-box" id="alert">
-      알림창임
-      <button onclick="박스닫기()" id="delete">X</button>
-    </div>
-    <button onclick="알림창열기()">버튼</button>
+    <div class="alert-box" id="alert">알림창임</div>
+    <button onclick="박스닫기()" id="delete">X</button>
+    <button onclick="알림창열기('alert', '아이디를 입력하세요')">버튼 1</button>
+    <button onclick="알림창열기('alert', '비밀번호를 입력하세요')">버튼 2</button>
     <script>
-      function 알림창열기() {
-        document.getElementById("alert").style.display = "block";
+      function 알림창열기(구멍1, 내용) {
+        document.getElementById(구멍1).style.display = "block";
+        document.getElementById(구멍1).innerHTML = 내용;
       }
 
       function 박스닫기() {
