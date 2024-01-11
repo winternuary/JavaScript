@@ -8,18 +8,23 @@
   </head>
   <body>
     <div class="alert-box" id="alert">알림창임</div>
-    <button onclick="박스닫기()" id="delete">X</button>
-    <button onclick="알림창열기('alert', '아이디를 입력하세요')">버튼 1</button>
-    <button onclick="알림창열기('alert', '비밀번호를 입력하세요')">버튼 2</button>
+    <button id="delete">X</button>
+    <button id="button1">버튼 1</button>
+    <button id="button2">버튼 2</button>
     <script>
-      function 알림창열기(구멍1, 내용) {
-        document.getElementById(구멍1).style.display = "block";
-        document.getElementById(구멍1).innerHTML = 내용;
-      }
+      document.getElementById("button1").addEventListener("click", function () {
+        document.getElementById("alert").style.display = "block";
+        document.getElementById("alert").innerHTML = "아이디를 입력하세요";
+      });
 
-      function 박스닫기() {
+      document.getElementById("button2").addEventListener("click", function () {
+        document.getElementById("alert").style.display = "block";
+        document.getElementById("alert").innerHTML = "비밀번호를 입력하세요";
+      });
+
+      document.getElementById("delete").addEventListener("click", function () {
         document.getElementById("alert").style.display = "none";
-      }
+      });
     </script>
   </body>
 </html>
