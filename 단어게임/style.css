@@ -31,29 +31,31 @@ body {
 #buttonBox {
   display: flex;
   margin-top: 1.5%;
-  width: 15%;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
 }
 
 #start {
-  margin: 0 2%;
+  margin-right: 5%;
   background-color: #578f67;
   color: #d8efd3;
-  width: 100%;
+  width: 6em;
   height: 2.5em;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "NeoDunggeunmoPro-Regular";
   border-width: 0;
 }
 
 #how {
-  margin: 0 2%;
+  margin-left: 5%;
   background-color: #578f67;
   color: #d8efd3;
-  width: 100%;
+  width: 6em;
   height: 2.5em;
   border-radius: 5px;
   border-width: 0;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "NeoDunggeunmoPro-Regular";
 }
