@@ -3,9 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>게임 페이지</title>
   </head>
   <body>
-    <h1>게임페이지입니다</h1>
+    <div id="main">
+      <p id="word"></p>
+      <p id="title">단어게임</p>
+      <p id="words">단어: <span id="random"></span></p>
+      <input type="text" id="input" />
+      <div id="buttonBox">
+        <button id="startGame">시작하기</button>
+        <button id="endGame">끝내기</button>
+      </div>
+    </div>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
