@@ -22,7 +22,7 @@ body {
   font-family: "NeoDunggeunmoPro-Regular";
   font-size: 35px;
   color: #578f67;
-  margin: 0;
+  margin: 0 0 1% 0;
 }
 
 #input {
@@ -77,15 +77,10 @@ body {
   font-size: 20px;
   color: #578f67;
 }
-#words {
-  font-family: "NeoDunggeunmoPro-Regular";
-  font-size: 25px;
-  color: #578f67;
-  margin: 1%;
-}
 
 #random {
   font-family: "NeoDunggeunmoPro-Regular";
-  font-size: 20px;
+  font-size: 25px;
   color: #578f67;
+  margin-bottom: 1%;
 }

@@ -33,11 +33,11 @@ const Words = [
   "true",
   "web",
   "open",
-  "eys",
-  "woder",
+  "eyes",
+  "wonder",
   "whole",
   "coffee",
-  "extra ordinary",
+  "extraordinary",
   "book",
   "school",
 ];
@@ -46,6 +46,8 @@ const startGame = document.getElementById("startGame");
 const endGame = document.getElementById("endGame");
 const random = document.getElementById("random");
 const input = document.getElementById("input");
+const scoreDisplay = document.getElementById("score");
+const finalScore = document.getElementById("finalScore");
 
 let correct = "";
 let randomWd = "";
@@ -59,7 +61,10 @@ const startNewGame = () => {
   randomWd = landomWords();
   correct = randomWd;
   random.textContent = randomWd;
-  input.value = ""; // 입력 필드 초기화
+  input.value = "";
+  input.style.display = "block";
+  random.style.display = "inline";
+  scoreDisplay.style.display = "none";
 };
 
 startGame.addEventListener("click", function clickStartGame() {
@@ -78,7 +83,6 @@ input.addEventListener("keydown", function (event) {
 
     if (inputValue === correct) {
       score += 5;
-      alert("정답입니다! +5점");
     } else {
       score -= 2;
       alert(`오답입니다. 정답은 '${correct}'입니다. -2점`);
@@ -89,6 +93,8 @@ input.addEventListener("keydown", function (event) {
 });
 
 endGame.addEventListener("click", function clickEndGame() {
-  alert(`게임을 끝냅니다. 최종 점수: ${score}점`);
-  window.location.href = "../index.html";
+  input.style.display = "none"; // 입력 필드 숨김
+  random.style.display = "none"; // 단어 숨김
+  finalScore.textContent = score; // 최종 점수 표시
+  scoreDisplay.style.display = "block"; // 점수 표시
 });
