@@ -75,7 +75,7 @@ startGame.addEventListener("click", function clickStartGame() {
 
 input.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
-    const inputValue = input.value.trim();
+    const inputValue = input.value;
     if (inputValue === "") {
       alert("입력값이 없습니다.");
       return;
