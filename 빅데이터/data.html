@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      window.onload = function () {
+        let chart1 = document.getElementById("chart1Canvas");
+        new Chart(chart1, {
+          type: "bar",
+          data: {
+            labels: ["Wish", "SongBird", "Steady"],
+            datasets: [
+              {
+                label: "Dataset 1",
+                data: [280400, 537900, 792300],
+                backgroundColor: "rgba(255, 150, 255, 0.2)",
+                borderColor: "#FF96FF",
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: true,
+          },
+        });
+
+        let chart2 = document.getElementById("chart2Canvas");
+        new Chart(chart2, {
+          type: "line",
+          data: {
+            labels: ["2015", "2017", "2019", "2021"],
+            datasets: [
+              {
+                label: "Dataset 2",
+                data: [127.1, 143.8, 156.2, 161.2],
+                backgroundColor: "rgba(150, 200, 255, 0.3)",
+                borderColor: "#96C6FF",
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: true,
+          },
+        });
+
+        let chart3 = document.getElementById("chart3Canvas");
+        new Chart(chart3, {
+          type: "radar",
+          data: {
+            labels: ["E", "F", "N", "J", "I", "T", "S", "P"],
+            datasets: [
+              {
+                label: "MBTI 비율",
+                data: [30, 74, 44, 25, 70, 26, 56, 75],
+                backgroundColor: "rgba(255, 200, 150, 0.3)",
+                borderColor: "#FFC896",
+                borderWidth: 2,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            scales: {
+              r: {
+                beginAtZero: true,
+                suggestedMax: 80,
+              },
+            },
+          },
+        });
+      };
+    </script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <p id="title">여러가지 그래프 만들기</p>
+      <div class="chart-container">
+        <div class="chart-item">
+          <p class="chart-title">nct wish 앨범 판매량</p>
+          <canvas id="chart1Canvas"></canvas>
+        </div>
+        <div class="chart-item">
+          <p class="chart-title">김영은 키 변화</p>
+          <canvas id="chart2Canvas"></canvas>
+        </div>
+        <div class="chart-item">
+          <p class="chart-title">MBTI 비율</p>
+          <canvas id="chart3Canvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

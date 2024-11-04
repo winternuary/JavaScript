@@ -1,0 +1,36 @@
+/* 게시글 컨테이너 스타일링 */
+#posts-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 각 게시글의 스타일링 */
+.post {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 게시글 제목 스타일링 */
+.post h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* 게시글 내용 스타일링 */
+.post p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* 게시글 호버 효과 */
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
